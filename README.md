@@ -3,13 +3,13 @@
 ### Age of Empires II: Definitive Edition — Civilization Guide
 
 > 面向《帝国时代2：决定版》模组 **「文明联盟」(Civilization Alliance)** 的全文明数据整理，以及**各流派「最优研究顺序」**推荐。
-> 62 个文明的全部特性逐条整理；14 个流派各自一张推荐表；所有结论都与游戏官方简体中文字串、官方 `CivTechTrees` JSON、`empires2_x2_p1.dat` 交叉验证。
+> 62 个文明的全部特性逐条整理；15 个流派各自一张推荐表；所有结论都与游戏官方简体中文字串、官方 `CivTechTrees` JSON、`empires2_x2_p1.dat` 交叉验证。
 
 ## ⬇️ 直接下载（推荐）
 
 **不想用 git？点这里一次下齐全部内容：**
 
-### 📦 [**下载 v1.0 压缩包（37 MB，13 张表 + 62 张卡片）**](https://github.com/198agk/aoe2de-civilization-guide/releases/latest)
+### 📦 [**下载 v1.0 压缩包（37 MB，15 张表 + 62 张卡片）**](https://github.com/198agk/aoe2de-civilization-guide/releases/latest)
 
 解压即用，无需安装任何东西。也可以用下面的 git 命令克隆。
 
@@ -24,7 +24,7 @@
 本仓库回答的正是这个问题，并给出：
 
 - 📋 **62 个文明的全量特性总表**（主要功能 / 独特科技 / 团队加成 / 独特单位）
-- 🎯 **14 个流派的最优研究顺序**（开局 3 免费位 → 后续 2000 金顺序 → 全 62 文明总名次）
+- 🎯 **15 个流派的最优研究顺序**（开局 3 免费位 → 后续 2000 金顺序 → 全 62 文明总名次）
 - 🏆 **每个流派的主选文明推荐**（该流派用哪个文明当底座最强）
 - 🖼️ **62 张文明卡片原图**（一切数据的原始依据）
 
@@ -50,7 +50,7 @@
 | `帝国时代2决定版 文明联盟 全文明特色.xlsx` | 62 文明 × 4 栏（文明定位 / 主要功能 / 独特科技 / 团队加成）+ 独特单位 | 2 |
 | `帝国时代2决定版 文明联盟 资源经济加成总表 By RemonBo.xlsx` | 全部**有利于资源**的条目，按 11 个类别归类（202 条；团队加成 62 条中利于资源者 15 条） | 4 |
 
-### 🎯 流派推荐表（14 张）
+### 🎯 流派推荐表（15 张）
 
 | 文件 | 流派 | 核心问题 |
 |---|---|---|
@@ -68,6 +68,7 @@
 | `… 巨型投石机流最优研究顺序 …` | 巨型投石机 | 拆城攻坚 |
 | `… 发育经济流最优研究顺序 …` | 村民 / 经济 / 资源 | 纯发育、长局经济 |
 | `… 海战流最优研究顺序 …` | 战船 / 码头 / 海军 | 水图海战 |
+| `… 火焰骆驼流最优研究顺序 …` | 火焰骆驼（鞑靼自爆单位） | 一波自爆换掉对面关键建筑 / 集群 |
 
 ### 🖼️ 文明卡片原图（62 张）
 
@@ -90,7 +91,7 @@
 | **全62文明总名次** | 1–62 名完整排序，前 10 名标红 |
 | **说明** | 口径、决定性前提、门槛、模组专属机制、未验证项 |
 
-**排序口径（四阶段）**：全 14 张流派表统一按打法顺序排——
+**排序口径（四阶段）**：全 15 张流派表统一按打法顺序排——
 
 1. **阶段 1 · 本体强化**：直接加强你要玩的主流派兵种（攻击 / 护甲 / 生命 / 攻速 / 射程 / 移速 / 回血 / 数量 / 训练速度 / 解锁升级）。
 2. **阶段 2 · 减费用**：降低该兵种**及其同系兵种**生产所需资源（费用 -N%、升级免费、用其它资源替代）。例：象兵属骑兵类，所以柏柏尔「马厩单位费用 -15/20%」也进象兵流的阶段 2。
@@ -121,6 +122,7 @@
 - **契丹「斡鲁朵骑兵」覆盖面比文案更广**：游戏自带的 `resources\_common\xs\Effects.xs` 里，效果函数 #3 是给 **dat class 12（骑兵）与 class 47（斥候）** 统一加 `CombatAbility 128`（战斗回血），再逐个剔除蒙古突骑/马穆鲁克/萨拉丁/雅尔/刘表/重弩战象等。因此**战象、装甲象、战斗象（class 12）都吃这条回血**，而**骑象弓兵（class 36）不吃**、重弩战象被显式排除。这也解释了为什么「马厩单位」的文案与实际覆盖范围不完全等价。
 - **「骑兵战斗中回血」是乘法级续航**：回血随攻击频率结算（stinger 系数 1.5），所以它与「攻速」类加成（保加利亚马镫 +33%）叠加时收益互相放大——这是骑兵流把保加利亚与契丹并列前二的原因。
 - **「象兵属骑兵系」在 dat 层是字面事实**：象兵系 10 个单位里，战象 239/558、重弩战象 1120/1122、战斗象 1132/1134、装甲象 1744/1746、象轿骑兵 1236 **都是 unit class 12（CAVALRY）**，只有**骑象弓兵 873/875 是 class 36（CAVALRY_ARCHER）**。所以象兵流的「阶段 2 · 减费用」必须包含马厩/骑兵系的减费按钮——例如柏柏尔「马厩单位费用 -15/20%」（`Type=5 B=12` 通配）、印加「军事单位食物 -15/20/25/30%」（`Type=5 B=0/6/12/23/...`，含 class 12）。同理女真「封建起骑乘/火枪骑攻速 +25%」也是 `B=12` 通配，象兵与骑兵都吃。
+- **火焰骆驼不是骑兵，是 class 35**：单位 1263 FCAMEL 在 dat 里 Class = 35（与爆破兵 440 同类），所以马镫、丝护甲、斡鲁朵、曼尼普尔马、骑士精神这些按 class 12（骑兵）生效的条目一条都吃不到；铁匠铺的锻造/铸铁/鼓风炉 class 集合是 [6,12,45,46,47,50]，也不含 35。真正打到它的只有 39 条命令：点名 1263 的、或按 class 35 通配的。它的 blast_width = 2.0（爆破兵 0.5、中型投石车 1.0、重型投石车 1.5）、blast_attack_level = 66（与战船同级）、friendly_fire_damage = 1.0（会炸自己人）。萨拉森按钮把半径推到 22.0，是全模组唯一不可替代的一笔。
 - **「骑士系」≠ class 12 通配**：官方文案里的「骑士系」条目（法兰克骑士系视野 +2、波斯骑士系对远程 +2、西西里锁子甲、瓦兰吉文德尔之遗）在 dat 里是**逐个点名 38/283/569/1813（骑士/重装骑士/圣骑士等骑士线单位）**，不是 class 12 通配，因此**象兵、骆驼、斥候都吃不到**。区分「class 通配」与「点名单位线」是判断加成能不能跨兵种吃到我们吃不到的关键。
 
 ### 未验证项
@@ -170,6 +172,7 @@
 骑兵流、骑士、圣骑士、游侠、斥候、轻骑兵、骆驼兵、冲车
 象兵流、战象、象兵、骑象弓兵、重弩战象、象轿、獠牙剑、宝伞
 火枪手流、火枪手、火枪、火药单位、化学、手推炮、炮舰、印度火铳、烟火之术、火绳枪
+火焰骆驼流、火焰骆驼、火骆驼、自爆骆驼、Flaming Camel、爆破兵、自爆单位、攻城骑兵、鞑靼火焰骆驼
 弩车流、蝎式弩、弩炮、重型蝎式弩、攻城武器
 巨型投石机流、巨型投石机、投石机、抛石机、牵引抛石机、拆城
 发育流、经济流、发育经济流、种田、爆经济、村民、采果工、伐木工、采矿工、贸易、市场、农田
@@ -177,11 +180,11 @@
 主选文明、底座文明、本命文明、选哪个文明、哪个文明好
 
 **常见问法**
-帝国时代2文明联盟怎么玩、文明联盟按钮怎么选、文明联盟先选什么、文明联盟开局选什么、文明联盟哪个文明强、帝国2决定版全文明加成、帝国2文明特色表、帝国2流派怎么打、箭塔流怎么开局、炮塔流顺序、骑兵流怎么选、海战流选什么文明、象兵流怎么玩、火枪手流顺序、掷矛手流怎么选
+帝国时代2文明联盟怎么玩、文明联盟按钮怎么选、文明联盟先选什么、文明联盟开局选什么、文明联盟哪个文明强、帝国2决定版全文明加成、帝国2文明特色表、帝国2流派怎么打、箭塔流怎么开局、炮塔流顺序、骑兵流怎么选、海战流选什么文明、象兵流怎么玩、火枪手流顺序、掷矛手流怎么选、火焰骆驼流怎么玩、火焰骆驼怎么解锁、火焰骆驼选哪个文明
 
 **English**
 Age of Empires 2, Age of Empires II, Definitive Edition, AoE2DE, civilization guide, civilization bonuses, civ list, unique tech, team bonus, unique unit, Civilization Alliance mod, tech buttons, alliance, build order, research order, optimal order, tier list, spreadsheet, walkthrough
-tower rush, bombard tower, castle drop, infantry, archer, skirmisher, cavalry archer, cavalry, war elephant, hand cannoneer, gunpowder, scorpion, trebuchet, economy boom, naval, best base civilization
+tower rush, bombard tower, castle drop, infantry, archer, skirmisher, cavalry archer, cavalry, war elephant, hand cannoneer, gunpowder, scorpion, trebuchet, economy boom, naval, flaming camel, petard, suicide unit, best base civilization
 
 ---
 
@@ -214,7 +217,7 @@ The **Civilization Alliance** mod lets you pick one base civilization and then u
 This repository contains:
 
 - **Full trait tables for all 62 civilizations** — civ role, main bonuses, unique techs, team bonus, and unique unit
-- **Optimal research orders for 14 playstyles** — Tower, Bombard Tower, Castle, Infantry, Archer, Skirmisher, Cavalry Archer, Cavalry, War Elephant, Hand Cannoneer, Scorpion, Trebuchet, Economy, and Naval
+- **Optimal research orders for 15 playstyles** — Tower, Bombard Tower, Castle, Infantry, Archer, Skirmisher, Cavalry Archer, Cavalry, War Elephant, Hand Cannoneer, Scorpion, Trebuchet, Economy, Naval, and Flaming Camel
 - **Best base-civilization recommendations** per playstyle (tech-tree completeness + native bonuses + weaknesses)
 - **62 original civilization card images** — the primary source for every entry
 - **A resource-economy summary** of all economy-related bonuses, grouped into 11 categories
