@@ -9,7 +9,7 @@
 
 **不想用 git？点这里一次下齐全部内容：**
 
-### 📦 [**下载 v1.0 压缩包（37 MB，15 张表 + 62 张卡片）**](https://github.com/198agk/aoe2de-civilization-guide/releases/latest)
+### 📦 [**下载 v1.1 压缩包（38 MB，17 张表 = 15 流派 + 2 总表，另 62 张卡片）**](https://github.com/198agk/aoe2de-civilizationAlliance-guide/releases/latest)
 
 解压即用，无需安装任何东西。也可以用下面的 git 命令克隆。
 
@@ -134,10 +134,10 @@
 ## 五、使用方法
 
 1. **下载**（二选一）：
-   - 点最上面的 [**v1.0 压缩包**](https://github.com/198agk/aoe2de-civilization-guide/releases/latest) 直接下全部内容；或
+   - 点最上面的 [**v1.1 压缩包**](https://github.com/198agk/aoe2de-civilizationAlliance-guide/releases/latest) 直接下全部内容；或
    - 克隆仓库：
      ```bash
-     git clone https://github.com/198agk/aoe2de-civilization-guide.git
+     git clone https://github.com/198agk/aoe2de-civilizationAlliance-guide.git
      ```
 2. 用 **Excel / WPS / LibreOffice** 打开对应流派的 xlsx（所有文件平铺在根目录）。
 3. 先看**「说明」页**了解口径与未验证项。
