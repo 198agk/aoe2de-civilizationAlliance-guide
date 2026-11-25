@@ -17,3 +17,9 @@ desktop.ini
 # Python
 __pycache__/
 *.py[cod]
+
+# 改造前的原始表备份（只在本地留着回滚，不进库）
+_backup_heights/
+_backup_totalseq/
+_orig_backup/
+*.bak
